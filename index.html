@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SBN FASHION STYLES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .fon {
+
+      font-size: 12px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: rgb(129, 227, 9);
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+
+
+    }
+
+    h2 {
+      color: rgb(0, 255, 174);
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+    }
+
+    .menu {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .menu a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .bg {
+      align-items: center;
+      text-align: center;
+      margin-top: 200px;
+    }
+
+    .co {
+      font-size: 40px;
+    }
+
+    .menu a:hover {
+      background-color: #00a651;
+      color: red;
+    }
+
+    .content-section {
+      display: none;
+      padding: 20px;
+    }
+
+    .recycling {
+      color: #ff7f50;
+    }
+
+
+
+    .reuse {
+      color: #ffbf00;
+    }
+
+    
+    .services {
+      background-color: #aaa;
+      padding: 20px;
+    }
+    /* 
+    .services img {
+      width: 300px;
+      height: 300px;
+      align-items: center;
+      font-weight: 700;
+      display: inline-block;
+
+    } */
+
+    /* .services p {
+      font-size: 24px;
+      font-weight: 400;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .services p:hover {
+      color: #18db5f;
+      border-radius: 20px;
+    } */
+
+    .log {
+      width: 20px;
+      padding: 0px;
+      float: left;
+      display: block;
+      margin-bottom: 50px;
+
+    }
+
+    .log img {
+      position: absolute;
+      width: 100px;
+      height: 100;
+      float: left;
+      justify-content: center;
+
+
+
+    }
+  </style>
+  <script>
+    //java script to toggle display of content sections
+    function showSection(sectionId) {
+      var sections = document.getElementsByClassName('content-section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+      }
+
+      var section = document.getElementById(sectionId);
+      section.style.display = 'block';
+    }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js">
+
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SBN FASHION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="showSection('home')">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('login')">LOGIN</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              MORE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" onclick="showSection('about us')">About Us</a></li>
+              <li><a class="dropdown-item" href="#" onclick="showSection('contact')">Contact</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" onclick="showSection('help')">HELP</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" onclick="showSection('Search')">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="menu">
+    <div class="log" >
+        <img src="A.jpg">
+    </div>
+    <ul>
+        <li><a href="#" onclick="showSection('home')"> HOME</a></li>
+      <li><a href="#" onclick="showSection('login')">LOGIN</a></li>
+      <li><a href="#" onclick="showSection('about us')">ABOUT US</a></li>
+      <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
+      <li><a href="#" onclick="showSection('help')">HELP</a></li>
+    <li><a href="#" onclick="showSection('Search')">SEARCH</a></li>
+      
+    </ul>
+  </div> -->
+  <strong>
+    <h1>SBN STYLE FASHIONS</h1>
+  </strong>
+
+  <div id="login" class="content-section">
+    <style>
+      #login {
+        display: flex;
+        justify-content: center;
+        /* background-color: #00a651; */
+
+      }
+
+      #login form {
+        margin-top: 30px;
+        box-shadow: 0 2px 5px #333;
+        height: fit-content;
+        border-radius: 5px;
+        width: 400px;
+        display: grid;
+        justify-content: center;
+      }
+
+      form div {
+        padding: 20px;
+      }
+
+      form .btn {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+
+      }
+
+      .loginbtn:hover {
+        background-color: #ff7f50;
+        cursor: pointer;
+      }
+
+      form .btn button {
+        background: none;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100px;
+        /* background-color: #00a651; */
+        text-transform: uppercase;
+
+      }
+
+      form input {
+        height: 30px;
+      }
+
+      .ll {
+        width: 200px;
+      }
+
+      .logbtn {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: inherit;
+        /* background-color: #00a651; */
+      }
+
+      .logbtn button {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+
+      }
+
+      .logbtn button:nth-child(1) {
+        background-color: aqua;
+      }
+
+      .logbtn button:nth-child(2) {
+        background-color: aquamarine;
+      }
+
+      .login-form {
+        justify-content: center;
+        display: flex !important;
+      }
+    </style>
+    <div>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LOGIN</title>
+      <!-- <link rel="stsylesheet" href="style.css"> -->
+    </div>
+
+
+    <div class="login-form">
+
+      <form action="login.php" method="post">
+        <div>
+          <h1 class="login-title">SBN LOGIN</h1>
+
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="name" placeholder="Enter Username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+
+          <input type="password" name="password" placeholder="Enter password" required>
+          <br>
+          <br>
+          <small>Forgot password?</small>
+        </div>
+        <div class="ll">
+          <i>Or Login with</i>
+          <div class="logbtn">
+            <button>Facebook</button>
+            <button>Google</button>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button type="submit" class="loginbtn" value="login" name="">login</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div id="contact" class="content-section">
+    <div class="services">
+      <h2>CONTACT</h2>
+      <p>0743722223</p>
+      <p>0774551585</p>
+      <p>0759486069</p>
+
+      <p>sbnrogers95@gmail.com</p>
+      <P>• Follow Us: Instagram | Facebook | WhatsApp |YouTube</P>
+      <H>• VISIT OUR STORES: </H>
+      <P>o Kampala Boutique: 123 Fashion Avenue, Shibuya</P>
+      <P>o Masaka Boutique: Via della Moda, 456</P>
+      <p>o Mbarara Boutique: Fifth Avenue, Suite 789</p>
+    </div>
+  </div>
+
+
+  <div id="home" class="content-section">
+    <div class="services">
+
+
+      <p>MEN SUITS</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="S.jpeg" class="card-img-top" alt=".men">
+            <div class="card-body">
+              <h5 class="card-title">CHECKED SUIT</h5>
+              <p class="card-text">Mens clothes</p>
+              <p class="card-text">Price: UGX550000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="R.jpeg" class="card-img-top" alt="suit">
+            <div class="card-body">
+              <h5 class="card-title">GOLDEN SUIT</h5>
+              <p class="card-text">Mens clothes</p>
+              <p class="card-text">Price: UGX600000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+</div>
+<div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="Q.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SUIT</h5>
+              <p class="card-text">suit</p>
+              <p class="card-text">Price: UGX 300000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="W.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Suit</h5>
+              <p class="card-text">Men</p>
+              <p class="card-text">Price: UGX550000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+</div>
+
+
+
+
+        </div>
+
+
+      </div>
+      <div>
+
+        <p>LADIES SUITS</p>
+        <div class="card" style="width: 18rem;">
+          <img src="D.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Women black suit</h5>
+            <p class="card-text">women</p>
+            <p class="card-text">Price: UGX 300000</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <span><img src="D.jpeg" style="width: 200;height: 200;"></span>
+        <span><img src="F.jpeg" style="width: 200;height: 200;"></span>
+        <span><img src="G.jpeg" style="width: 200;height: 200;"></span>
+        <span><img src="H.jpeg" style="width: 200;height: 200;"></span>
+        <span><img src="J.jpeg" style="width: 200;height: 200;"></span>
+      </div>
+
+      <div>
+        <p>WOMEN OUTFITS</p>
+        <img src="X.jpeg" style="width: 200;height: 200;">
+        <img src="M.jpeg" style="width: 200;height: 200;">
+        <img src="V.jpeg" style="width: 200;height: 200;">
+        <img src="N.jpeg" style="width: 200;height: 200;">
+        <img src="Z.jpeg" style="width: 200;height: 200;">
+      </div>
+
+      <div>
+        <p> SWEATER PANTS</p>
+        <img src="K.jpeg" style="width: 200;height: 200;">
+        <img src="OIF.jpeg" style="width: 200;height: 200;">
+        <img src="OIP.jpeg" style="width: 200;height: 200;">
+
+      </div>
+
+      <div>
+        <p>TRACK SUITS</p>
+        <img src="OIF.jpeg" style="width: 200;height: 200;">
+        <img src="OIP.jpeg" style="width: 200;height: 200;">
+        <img src="OIP (3).jpeg" style="width: 200;height: 200;">
+        <img src="T.jpeg" style="width: 200;height: 200;">
+        <img src="th (1).jpeg" style="width: 200;height: 200;">
+
+      </div>
+
+      <div>
+        <p>SNEAKERS</p>
+        <img src="OIF.jpeg" style="width: 200;height: 200;">
+        <img src="OIF (1).jpeg" style="width: 200;height: 200;">
+        <img src="th.jpeg" style="width: 200;height: 200;">
+        <img src="OIP (2).jpeg" style="width: 200;height: 200;">
+      </div>
+
+    </div>
+    <div id="help" class="content-section">
+
+      <div class="services">
+        <h1>HELP AND INFORMATION</h1>
+        <h2>ENABLING ONLINE PURCHASE</h2>
+        <h4>• E-Commerce Platform:</h4>
+        <p>o SBN Fashion Style should integrate an e-commerce platform into its website. Popular options include
+          Shopify,
+          Woo Commerce, or Squarespace.
+          o Set up secure payment gateways to accept credit cards, digital wallets, and other payment methods.
+          o Ensure a smooth checkout process with clear instructions and minimal steps.
+        <h1>SHIPPING AND DELIVERY:</h1>
+        o Define shipping methods (standard, express, etc.) and costs.
+        o Provide estimated delivery times.
+        o Consider offering free shipping for orders above a certain amount.
+        <h2>INVENTORY MANAGEMENT:</h2>
+        o Keep track of stock levels to avoid overselling.
+        o Automatically update product availability based on real-time sales.
+        🌟👗✨</p>
+
+        <h5>PROMOTING PHYSICAL BUSINESS</h5>
+        <h6>• STORE LOCATOR:</h6>
+        <p>o Add a “Find Our Stores” section on the website.
+          o Include addresses, opening hours, and contact details for SBN Fashion Style’s physical boutiques.
+          o Use Google Maps integration for easy navigation.</p>
+        <h7>• IN-STORE EVENTS:</h7>
+        <h8>• LOCAL SEO:</h8>
+        <p>o Optimize the website for local search. Use location-specific keywords (e.g., “fashion boutique in Tokyo”)
+          to
+          attract nearby customers.
+          o Encourage customers to leave reviews on platforms like Google My Business.</p>
+        </h3>
+        <p>Track order</p>
+        <p>Delivery and returns</p>
+        <p>SBN Premier</p>
+        <p>10% Student discount</p>
+        <p>Sitemap</p>
+      </div>
+    </div>
+
+
+    <div id="about us" class="content-section">
+      <h2>ABOUT US</h2>
+      <h3>INTRODUCTION</h3>
+      <p>SBN Fashion Style is not just a brand; it’s an experience. Our website serves as a digital runway, showcasing
+        the
+        latest trends, timeless classics, and personalized styling tips. Let’s take a closer look at what makes SBN
+        Fashion Style stand out.</p>
+      <h4>MEET THE FOUNDER: SBN</h4>
+      <p>At the heart of SBN Fashion Styles is our visionary founder, Sir. Ssebwana S.R (SBN). With a background in
+        haute
+        couture and an eye for detail, SBN brings his passion for fashion to every stitch. His journey began in the
+        bustling streets of Kampala, where he apprenticed under renowned designers. Today, SBN’s creative genius drives
+        SBN Fashion Style’s success.</p>
+      <h4>EXPERTISE AND CRAFTSMANSHIP</h4>
+      <p>SBN Fashion Styles prides itself on impeccable craftsmanship. Our team of skilled artisans combines traditional
+        techniques with modern innovation. From hand-sewn sequins to intricate embroidery, each piece reflects our
+        commitment to quality. SBN’s expertise ensures that every garment tells a story.
+      </p>
+      <div class="services">
+        <h1>MORE FROM SBN STYLES</h1>
+        <p>> SBN bags</p>
+        <p>> SBN Jewelries</p>
+        <p>> SBN Shoes</p>
+        <p>> SBN Belts</p>
+        <p>> SBN eye glasses</p>
+        <p>> SBN elevating fashion</p>
+        <p>> SBN Watches.</p>
+        <p>Where Fashion Meets Passion</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg">
+    <div class="co">
+      <h1>SEARCH FOR YOUR LATEST FASHION TRENDS</h1>
+
+
+      <div clas="field">
+        <span class="USER"></span>
+        <input type="text" required placeholder="enter your fashion trend">
+      </div>
+      <label for="SEARCH FOR LATEST FASHION TRENDS"></label>
+      <style>
+        .sub {
+          font-size: 20px;
+
+        }
+
+        .field {
+          display: grid;
+          justify-content: center;
+
+          position: relative;
+          width: 100%;
+          padding: 20px;
+        }
+      </style>
+
+      <form class="field">
+        <input type="submit" value="SUBMIT" class="btn-success sub btn">
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

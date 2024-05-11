@@ -1,0 +1,66 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ .login-form{
+    background-color: blueviolet;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+ }
+ .login-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #343a40;
+ }
+ .form-group{
+    margin-bottom: 15px;
+ }
+ .form-group label{
+    display:block;
+    margin-bottom: 5px;
+    color:aqua;
+ }
+ .form-group input{
+    width: 100%;
+    padding:10px;
+    border-radius: 3px;
+    font-size: 16px;
+ }
+ .button{
+    background-color: aquamarine;
+    colour: #fff;
+    padding: 10px 20px;
+    boarder: none;
+    boarder-radius: 3px;
+    cursor: pointer;
+ }
+ /* .product-info{
+   position:relative;
+ }
+.product-name{
+   position:absolute;
+   top: 10px;
+   left: 10px;
+   color:chartreuse;
+   background-color: black;
+   padding: 5px;
+}
+ .product-price{
+   position: absolute;
+   bottom: 10px;
+   right:10px;
+   color:aliceblue;
+   font-weight: bold;
+   background-color: black;
+   padding: 5px;
+ } */
+ /* login */
+ 
